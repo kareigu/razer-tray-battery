@@ -27,9 +27,9 @@ struct fmt::formatter<rzr_ic::USBDevice> {
 
   template<typename FormatContext>
   auto format(const rzr_ic::USBDevice& value, FormatContext& ctx) {
-    fmt::format_to(ctx.out(), "\nVendor ID: {:X}\n", value.vendor_id);
-    fmt::format_to(ctx.out(), "Product ID: {:X}\n", value.product_id);
-    fmt::format_to(ctx.out(), "Version Number: {:X}\n", value.version_number);
+    fmt::format_to(ctx.out(), "\nVendor ID: {:#x}\n", value.vendor_id);
+    fmt::format_to(ctx.out(), "Product ID: {:#x}\n", value.product_id);
+    fmt::format_to(ctx.out(), "Version Number: {:#x}\n", value.version_number);
     fmt::format_to(ctx.out(), "Manufacturer String: {:s}\n", value.manufacturer_string);
     fmt::format_to(ctx.out(), "Product String: {:s}\n", value.product_string);
     fmt::format_to(ctx.out(), "Path: {:s}\n", value.path);

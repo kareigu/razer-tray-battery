@@ -37,6 +37,7 @@ set(PROJECT_SOURCES
         src/window.cpp
         src/tray_icon.cpp
         src/usb_device.cpp
+        src/razer_report.cpp
 )
 
 set(PROJECT_RESOURCES
